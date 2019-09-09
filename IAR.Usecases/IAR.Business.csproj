@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IAR.Domain\IAR.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DeleteInformationAsset\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DSS.Architecture.Patterns.DotNet.Clean" Version="1.0.6" />
+  </ItemGroup>
+
+</Project>

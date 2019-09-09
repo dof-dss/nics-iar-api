@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>16c81379-7140-4ecd-89e8-936752326864</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.2\IAR.WebApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ApplicableRightsController.cs" />
+    <Compile Remove="Controllers\AssetStatusController.cs" />
+    <Compile Remove="Controllers\AssetValueController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DSS.Architecture.Patterns.DotNet.Clean" Version="1.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="3.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.17" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore.Design" Version="8.0.17" />
+    <PackageReference Include="Steeltoe.CloudFoundry.Connector.EFCore" Version="2.3.0" />
+    <PackageReference Include="Steeltoe.CloudFoundry.ConnectorCore" Version="2.3.0" />
+    <PackageReference Include="Steeltoe.Management.CloudFoundryCore" Version="2.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IAR.Infrastructure\IAR.Infrastructure.csproj" />
+    <ProjectReference Include="..\IAR.Usecases\IAR.Business.csproj" />
+  </ItemGroup>
+
+</Project>

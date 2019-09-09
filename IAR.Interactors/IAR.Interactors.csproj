@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IAR.Core\IAR.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DSS.Architecture.Patterns.DotNet.Clean">
+      <HintPath>..\..\DSS.Architecture.Patterns\DSS.Architecture.Patterns.DotNet.Clean\bin\Debug\netstandard2.0\DSS.Architecture.Patterns.DotNet.Clean.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
