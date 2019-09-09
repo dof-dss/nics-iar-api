@@ -1,7 +1,7 @@
 # NICS IAR API 
 
 ## Description
-A simple Web API which for use with the Northern Ireland Civil Service Information Asset Register
+A simple Web API for use with the Northern Ireland Civil Service Information Asset Register
 
 ## Contents of this file
 
