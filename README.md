@@ -1,7 +1,7 @@
-# PROJECT NAME 
+# NICS IAR API 
 
 ## Description
-*A good description is clear, short, and to the point. Describe the importance of your project, and what it does.*
+A simple Web API which for use with the Northern Ireland Civil Service Information Asset Register
 
 ## Contents of this file
 
